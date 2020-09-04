@@ -1,0 +1,17 @@
+# RENAME FILE TO .zshrc
+# PLACE FILE IN USERNAME DIRECTORY
+
+export PATH="$PATH:Downloads/flutter/bin" #add flutter to path
+export PYTHONPATH="/usr/local/Cellar/python/3.8.3/bin/python3:$PYTHONPATH" #set python3 as default python version
+
+#random cow to say random things
+cowlist=( $(cowsay -l | sed "1 d") );
+thechosencow=${cowlist[$(($RANDOM % ${#cowlist[*]}))]}
+fortune | cowsay -f "$thechosencow" | lolcat --seed 20
+
+#prompt customization
+PS1="%{%F{default}%}%n%{%F{magenta}%}~%{%F{cyan}%}%C%{%F{magenta}%} %{$%f%}%$ "
+
+echo
+echo
+echo
