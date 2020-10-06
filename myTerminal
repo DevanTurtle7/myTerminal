@@ -1,3 +1,6 @@
+# RENAME FILE TO .zshrc
+# PLACE FILE IN USERNAME DIRECTORY
+
 export PATH="$PATH:/Users/dkavalchek/Downloads/flutter/bin" #add flutter to path
 export PYTHONPATH="/usr/local/Cellar/python/3.8.3/bin/python3:$PYTHONPATH" #set python3 as default python version
 
